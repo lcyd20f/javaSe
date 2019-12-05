@@ -9,7 +9,7 @@ public class Lab12_1 extends JFrame{
 	private static final long serialVersionUID = 6779582834594027623L;
 	private JLabel jl = new JLabel();
 	private static Thread t;
-	private int count_x = 0;
+	private int count_x = 250;
 	private int count_y = 0;
 	private Container container = getContentPane();
 	
@@ -36,7 +36,7 @@ public class Lab12_1 extends JFrame{
 					count_x += 60*Math.sin(Math.random()*6.28)*Math.random();
 					count_y += 2*Math.random();
 					if(count_x >= 500 || count_y >= 500){
-						count_x = 0;
+						count_x = 250;
 						count_y = 0;
 					}
 				}
